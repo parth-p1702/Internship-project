@@ -1,0 +1,361 @@
+@font-face {
+  font-family: kalam;
+  src: url(./Kalam-Regular.ttf);
+}
+@font-face {
+  font-family: aboreto;
+  src: url(./Aboreto-Regular.ttf);
+}
+@font-face {
+  font-family: poppins;
+  src: url(./Poppins-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+header nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: #f5f5dc;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+header nav .logo {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  cursor: pointer;
+}
+header nav .logo #first {
+  color: #222222;
+  font-weight: 700;
+  font-family: kalam;
+}
+header nav .logo #last {
+  text-transform: uppercase;
+  font-family: aboreto;
+  color: #ff6c04;
+}
+header nav .buttons {
+  display: none;
+}
+header nav .login {
+  display: none;
+}
+header nav .menu {
+  font-size: 1.5rem;
+  color: #800000;
+}
+
+main {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fbfbf1;
+}
+main .hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 35px;
+}
+main .hero-section .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .hero-section .hero h1 {
+  font-family: aboreto;
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  color: #800000;
+  transition: transform 0.3s ease;
+  word-spacing: 5px;
+}
+main .hero-section .hero h1 span {
+  color: #670000;
+  font-size: 2.7rem;
+}
+main .hero-section .hero-line {
+  display: flex;
+  justify-content: center;
+  background-color: #fbfbf4;
+}
+main .hero-section .hero-line .line {
+  width: 80vw;
+  height: 4px;
+  background-color: #ff6c04;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+main .hero-section .hero-content {
+  text-align: center;
+  font-size: 1rem;
+}
+main .hero-section .hero-content p {
+  color: #364153;
+  font-family: Helvetica;
+  font-size: 1rem;
+}
+main .hero-section .hero-img {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+main .hero-section .hero-img img {
+  width: 100%;
+  max-width: 50vw;
+  height: 100%;
+  max-height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+main .hero-section .hero-img a {
+  text-decoration: none;
+  color: #009688;
+  font-family: Helvetica;
+}
+main .book-section {
+  font-family: poppins;
+  text-align: center;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 28px;
+}
+main .book-section .book-title {
+  color: #800000;
+}
+main .book-section .book-title h1 {
+  font-weight: 550;
+  font-size: 2rem;
+}
+main .book-section .book-content {
+  color: #4a5565;
+}
+main .book-section .book-content p {
+  font-size: 1rem;
+}
+main .book-section .book-button button {
+  border: none;
+  padding: 10px 30px;
+  background-color: #ff951c;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  word-spacing: -0.25px;
+  letter-spacing: 1px;
+}
+main .book-section .book-button button:hover {
+  opacity: 0.88;
+  transition: 0.3s;
+}
+main .feature-section .feature3, main .feature-section .feature2, main .feature-section .feature1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: #fff;
+  padding: 28px 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+main .feature-section .feature3 .top, main .feature-section .feature2 .top, main .feature-section .feature1 .top {
+  text-align: center;
+}
+main .feature-section .feature3 .top i, main .feature-section .feature2 .top i, main .feature-section .feature1 .top i {
+  font-size: 2rem;
+  color: #009688;
+  background-color: #e6f5f3;
+  border-radius: 50%;
+  padding: 12px;
+}
+main .feature-section .feature3 .mid, main .feature-section .feature2 .mid, main .feature-section .feature1 .mid {
+  font-size: 1.25rem;
+  color: #ff6c04;
+  font-weight: 700;
+}
+main .feature-section .feature3 .bottom, main .feature-section .feature2 .bottom, main .feature-section .feature1 .bottom {
+  color: #4a5565;
+}
+main .feature-section {
+  font-family: poppins;
+  display: grid;
+  flex-wrap: wrap;
+  padding: 10px 18px;
+  gap: 15px;
+}
+main .process-section {
+  font-family: poppins;
+  padding: 10px 15px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+main .process-section .process-top {
+  text-align: center;
+  padding: 25px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+main .process-section .process-top .process-top-title {
+  color: #ff6c04;
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+main .process-section .process-top .process-top-title::before {
+  content: "\f185";
+  font-family: "remixicon";
+  font-size: 1.4rem;
+  color: black;
+  margin-right: 10px;
+  font-weight: 400;
+}
+main .process-section .process-top .process-top-heading {
+  color: #800000;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+main .process-section .process-top .process-top-text {
+  font-size: 0.85rem;
+  color: #4a5565;
+}
+main .process-section .process-bottom {
+  text-align: center;
+  padding: 25px 20px;
+}
+main .process-section .process-bottom .process-bottom-four, main .process-section .process-bottom .process-bottom-third, main .process-section .process-bottom .process-bottom-second, main .process-section .process-bottom .process-bottom-one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+}
+main .process-section .process-bottom .process-bottom-four .process-bottom-one-left, main .process-section .process-bottom .process-bottom-third .process-bottom-one-left, main .process-section .process-bottom .process-bottom-second .process-bottom-one-left, main .process-section .process-bottom .process-bottom-one .process-bottom-one-left {
+  width: 6rem;
+  font-size: 0.85rem;
+  color: #4a5565;
+}
+main .process-section .process-bottom .process-bottom-four .process-bottom-one-left h3, main .process-section .process-bottom .process-bottom-third .process-bottom-one-left h3, main .process-section .process-bottom .process-bottom-second .process-bottom-one-left h3, main .process-section .process-bottom .process-bottom-one .process-bottom-one-left h3 {
+  color: black;
+}
+main .process-section .process-bottom .process-bottom-four .process-bottom-one-mid, main .process-section .process-bottom .process-bottom-third .process-bottom-one-mid, main .process-section .process-bottom .process-bottom-second .process-bottom-one-mid, main .process-section .process-bottom .process-bottom-one .process-bottom-one-mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+main .process-section .process-bottom .process-bottom-four .process-bottom-one-mid .line-top, main .process-section .process-bottom .process-bottom-third .process-bottom-one-mid .line-top, main .process-section .process-bottom .process-bottom-second .process-bottom-one-mid .line-top, main .process-section .process-bottom .process-bottom-one .process-bottom-one-mid .line-top,
+main .process-section .process-bottom .process-bottom-four .process-bottom-one-mid .line-bottom,
+main .process-section .process-bottom .process-bottom-third .process-bottom-one-mid .line-bottom,
+main .process-section .process-bottom .process-bottom-second .process-bottom-one-mid .line-bottom,
+main .process-section .process-bottom .process-bottom-one .process-bottom-one-mid .line-bottom {
+  height: 45px;
+  width: 2px;
+  background-color: #ff6c04;
+}
+main .process-section .process-bottom .process-bottom-four .process-bottom-one-mid .line-mid, main .process-section .process-bottom .process-bottom-third .process-bottom-one-mid .line-mid, main .process-section .process-bottom .process-bottom-second .process-bottom-one-mid .line-mid, main .process-section .process-bottom .process-bottom-one .process-bottom-one-mid .line-mid {
+  padding: 5px 7px;
+  border-radius: 50%;
+  background-color: var(--line-mid-color, #009688);
+  color: white;
+  font-size: 1.25rem;
+}
+main .process-section .process-bottom .process-bottom-four .process-bottom-one-right, main .process-section .process-bottom .process-bottom-third .process-bottom-one-right, main .process-section .process-bottom .process-bottom-second .process-bottom-one-right, main .process-section .process-bottom .process-bottom-one .process-bottom-one-right {
+  width: 6rem;
+}
+main .process-section .process-bottom .process-bottom-four .process-bottom-one-right p, main .process-section .process-bottom .process-bottom-third .process-bottom-one-right p, main .process-section .process-bottom .process-bottom-second .process-bottom-one-right p, main .process-section .process-bottom .process-bottom-one .process-bottom-one-right p {
+  margin: 0;
+}
+main .process-section .process-bottom .process-bottom-four .process-bottom-one-right p:nth-of-type(1), main .process-section .process-bottom .process-bottom-third .process-bottom-one-right p:nth-of-type(1), main .process-section .process-bottom .process-bottom-second .process-bottom-one-right p:nth-of-type(1), main .process-section .process-bottom .process-bottom-one .process-bottom-one-right p:nth-of-type(1) {
+  font-size: 1rem;
+}
+main .process-section .process-bottom .process-bottom-four .process-bottom-one-right p:nth-of-type(2), main .process-section .process-bottom .process-bottom-third .process-bottom-one-right p:nth-of-type(2), main .process-section .process-bottom .process-bottom-second .process-bottom-one-right p:nth-of-type(2), main .process-section .process-bottom .process-bottom-one .process-bottom-one-right p:nth-of-type(2) {
+  font-size: 0.8rem;
+  color: #4a5565;
+}
+main .process-section .process-bottom .process-bottom-second {
+  flex-direction: row-reverse;
+  --line-mid-color: #800000;
+}
+main .process-section .process-bottom .process-bottom-third {
+  --line-mid-color: #1976d2;
+}
+main .process-section .process-bottom .process-bottom-four {
+  flex-direction: row-reverse;
+  --line-mid-color: #ff4500;
+  margin-top: -5px;
+}
+main .boxSuggest-section {
+  padding: 25px 15px;
+  margin-top: 50px;
+  font-family: poppins;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .boxSuggest-section .boxSuggest4, main .boxSuggest-section .boxSuggest3, main .boxSuggest-section .boxSuggest2, main .boxSuggest-section .boxSuggest1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 20px;
+  background-color: white;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+main .boxSuggest-section .boxSuggest4 .box-icon, main .boxSuggest-section .boxSuggest3 .box-icon, main .boxSuggest-section .boxSuggest2 .box-icon, main .boxSuggest-section .boxSuggest1 .box-icon {
+  padding: 10px 0;
+}
+main .boxSuggest-section .boxSuggest4 .box-icon i, main .boxSuggest-section .boxSuggest3 .box-icon i, main .boxSuggest-section .boxSuggest2 .box-icon i, main .boxSuggest-section .boxSuggest1 .box-icon i {
+  font-size: 1.25rem;
+  color: #009688;
+  background-color: #e6f5f3;
+  border-radius: 50%;
+  padding: 12px;
+}
+main .boxSuggest-section .boxSuggest4 .box-content, main .boxSuggest-section .boxSuggest3 .box-content, main .boxSuggest-section .boxSuggest2 .box-content, main .boxSuggest-section .boxSuggest1 .box-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+main .boxSuggest-section .boxSuggest4 .box-content h1, main .boxSuggest-section .boxSuggest3 .box-content h1, main .boxSuggest-section .boxSuggest2 .box-content h1, main .boxSuggest-section .boxSuggest1 .box-content h1 {
+  font-size: 1.05rem;
+  color: #ff6c04;
+  font-weight: 700;
+}
+main .boxSuggest-section .boxSuggest4 .box-content p, main .boxSuggest-section .boxSuggest3 .box-content p, main .boxSuggest-section .boxSuggest2 .box-content p, main .boxSuggest-section .boxSuggest1 .box-content p {
+  color: #4a5565;
+  font-size: 0.8rem;
+}/*# sourceMappingURL=style.css.map */
