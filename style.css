@@ -174,7 +174,7 @@ main .book-section .book-button button:hover {
   opacity: 0.88;
   transition: 0.3s;
 }
-main .feature-section .feature3, main .feature-section .feature2, main .feature-section .feature1 {
+main .help-section .help-div, main .feature-section .feature3, main .feature-section .feature2, main .feature-section .feature1 {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -185,22 +185,22 @@ main .feature-section .feature3, main .feature-section .feature2, main .feature-
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
 }
-main .feature-section .feature3 .top, main .feature-section .feature2 .top, main .feature-section .feature1 .top {
+main .help-section .help-div .top, main .feature-section .feature3 .top, main .feature-section .feature2 .top, main .feature-section .feature1 .top {
   text-align: center;
 }
-main .feature-section .feature3 .top i, main .feature-section .feature2 .top i, main .feature-section .feature1 .top i {
+main .help-section .help-div .top i, main .feature-section .feature3 .top i, main .feature-section .feature2 .top i, main .feature-section .feature1 .top i {
   font-size: 2rem;
   color: #009688;
   background-color: #e6f5f3;
   border-radius: 50%;
   padding: 12px;
 }
-main .feature-section .feature3 .mid, main .feature-section .feature2 .mid, main .feature-section .feature1 .mid {
+main .help-section .help-div .mid, main .feature-section .feature3 .mid, main .feature-section .feature2 .mid, main .feature-section .feature1 .mid {
   font-size: 1.25rem;
   color: #ff6c04;
   font-weight: 700;
 }
-main .feature-section .feature3 .bottom, main .feature-section .feature2 .bottom, main .feature-section .feature1 .bottom {
+main .help-section .help-div .bottom, main .feature-section .feature3 .bottom, main .feature-section .feature2 .bottom, main .feature-section .feature1 .bottom {
   color: #4a5565;
 }
 main .feature-section {
@@ -358,4 +358,238 @@ main .boxSuggest-section .boxSuggest4 .box-content h1, main .boxSuggest-section 
 main .boxSuggest-section .boxSuggest4 .box-content p, main .boxSuggest-section .boxSuggest3 .box-content p, main .boxSuggest-section .boxSuggest2 .box-content p, main .boxSuggest-section .boxSuggest1 .box-content p {
   color: #4a5565;
   font-size: 0.8rem;
+}
+main .faqs-section .faqs-box, main .feedback-section .feedback-heading, main .photos-section .photos-heading {
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+}
+main .faqs-section .faqs-box h3, main .feedback-section .feedback-heading h3, main .photos-section .photos-heading h3 {
+  color: #ff6c04;
+}
+main .faqs-section .faqs-box h3::before, main .feedback-section .feedback-heading h3::before, main .photos-section .photos-heading h3::before {
+  content: "\ee4b";
+  font-family: "remixicon";
+  color: black;
+  font-weight: 300;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+main .faqs-section .faqs-box h1, main .feedback-section .feedback-heading h1, main .photos-section .photos-heading h1 {
+  color: #800000;
+  font-weight: 500;
+  font-size: 1.75rem;
+}
+main .faqs-section .faqs-box p, main .feedback-section .feedback-heading p, main .photos-section .photos-heading p {
+  color: #4a5565;
+  font-size: 0.8rem;
+}
+main .photos-section {
+  padding: 25px 15px;
+  margin-top: 60px;
+  font-family: poppins;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+main .photos-section .photos-box, main .photos-section .photos-sub-title {
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+  background-color: white;
+}
+main .photos-section .photos-box h3, main .photos-section .photos-sub-title h3 {
+  color: #009688;
+  font-weight: 500;
+}
+main .photos-section .photos-box p, main .photos-section .photos-sub-title p {
+  color: #4a5565;
+  font-size: 0.8rem;
+}
+main .photos-section .photos-main {
+  padding: 25px 0px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+main .photos-section .photos-main img {
+  width: 100%;
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+main .photos-section .photos-sub-Head {
+  padding: 25px 10px;
+  text-align: center;
+  background-color: white;
+}
+main .photos-section .photos-sub-Head h3 {
+  color: #009688;
+  font-weight: 500;
+  font-size: 1rem;
+}
+main .photos-section .photos-sub-title {
+  padding: 25px 18px;
+}
+main .feedback-section {
+  padding: 25px 15px;
+  margin-top: 40px;
+  font-family: poppins;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+main .feedback-section .feedback-heading h3::before {
+  content: "\ec52";
+  font-family: "remixicon";
+  color: black;
+  background: none;
+  font-weight: 300;
+}
+main .feedback-section .feedback-box .feedback-box3, main .feedback-section .feedback-box .feedback-box2, main .feedback-section .feedback-box .feedback-box1 {
+  overflow: hidden;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+}
+main .feedback-section .feedback-box .feedback-box3 img, main .feedback-section .feedback-box .feedback-box2 img, main .feedback-section .feedback-box .feedback-box1 img {
+  width: 75px;
+  height: 75px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 50%;
+}
+main .feedback-section .feedback-box .feedback-box3 i, main .feedback-section .feedback-box .feedback-box2 i, main .feedback-section .feedback-box .feedback-box1 i {
+  color: #ff4500;
+  font-size: 1.2rem;
+}
+main .feedback-section .feedback-box .feedback-box3 p, main .feedback-section .feedback-box .feedback-box2 p, main .feedback-section .feedback-box .feedback-box1 p {
+  color: #4a5565;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+main .feedback-section .feedback-box .feedback-box3 h3, main .feedback-section .feedback-box .feedback-box2 h3, main .feedback-section .feedback-box .feedback-box1 h3 {
+  color: #009688;
+}
+main .feedback-section .feedback-box .feedback-box3 h5, main .feedback-section .feedback-box .feedback-box2 h5, main .feedback-section .feedback-box .feedback-box1 h5 {
+  color: #4a5565;
+  font-size: 0.85rem;
+}
+main .feedback-section .feedback-box {
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+main .feedback-section .feedback-box .feedback-box2 {
+  display: flex;
+}
+main .faqs-section {
+  padding: 25px 15px;
+  margin-top: 40px;
+  font-family: poppins;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+main .faqs-section .faqs-box h3::before {
+  content: "\f043";
+  font-family: "remixicon";
+  color: black;
+  background: none;
+  font-weight: 300;
+}
+main .faqs-section .faqs-que {
+  padding: 10px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main .faqs-section .faqs-que .faqs-que-box4, main .faqs-section .faqs-que .faqs-que-box3, main .faqs-section .faqs-que .faqs-que-box2, main .faqs-section .faqs-que .faqs-que-box1 {
+  padding: 10px 10px;
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+main .faqs-section .faqs-que .faqs-que-box4 .faqs-que1, main .faqs-section .faqs-que .faqs-que-box3 .faqs-que1, main .faqs-section .faqs-que .faqs-que-box2 .faqs-que1, main .faqs-section .faqs-que .faqs-que-box1 .faqs-que1 {
+  padding: 10 0px;
+  display: inline;
+  -webkit-user-select: none;
+}
+main .faqs-section .faqs-que .faqs-que-box4 .faqs-que1 summary, main .faqs-section .faqs-que .faqs-que-box3 .faqs-que1 summary, main .faqs-section .faqs-que .faqs-que-box2 .faqs-que1 summary, main .faqs-section .faqs-que .faqs-que-box1 .faqs-que1 summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .faqs-section .faqs-que .faqs-que-box4 .faqs-que1 summary::-webkit-details-marker, main .faqs-section .faqs-que .faqs-que-box3 .faqs-que1 summary::-webkit-details-marker, main .faqs-section .faqs-que .faqs-que-box2 .faqs-que1 summary::-webkit-details-marker, main .faqs-section .faqs-que .faqs-que-box1 .faqs-que1 summary::-webkit-details-marker {
+  display: none;
+}
+main .faqs-section .faqs-que .faqs-que-box4 .faqs-que1 summary::after, main .faqs-section .faqs-que .faqs-que-box3 .faqs-que1 summary::after, main .faqs-section .faqs-que .faqs-que-box2 .faqs-que1 summary::after, main .faqs-section .faqs-que .faqs-que-box1 .faqs-que1 summary::after {
+  content: "\ea4e";
+  font-family: "remixicon";
+  margin-left: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+main .faqs-section .faqs-que .faqs-que-box4 .faqs-que1[open] summary::after, main .faqs-section .faqs-que .faqs-que-box3 .faqs-que1[open] summary::after, main .faqs-section .faqs-que .faqs-que-box2 .faqs-que1[open] summary::after, main .faqs-section .faqs-que .faqs-que-box1 .faqs-que1[open] summary::after {
+  content: "\ea78";
+  font-family: "remixicon";
+}
+main .faqs-section .faqs-que .faqs-que-box4 .faqs-que1 p, main .faqs-section .faqs-que .faqs-que-box3 .faqs-que1 p, main .faqs-section .faqs-que .faqs-que-box2 .faqs-que1 p, main .faqs-section .faqs-que .faqs-que-box1 .faqs-que1 p {
+  margin-top: 10px;
+  color: #555;
+  line-height: 1.5;
+}
+main .help-section {
+  padding: 25px 15px;
+  font-family: poppins;
+}
+main .help-section .help-div .help-btn button {
+  padding: 10px 30px;
+  border: none;
+  background-color: #ff6c04;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.05rem;
+}
+main .help-section .help-div .help-btn button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+main .help-section .help-div .help-btn button:active {
+  scale: 0.95;
+  transition: 0.3s;
 }/*# sourceMappingURL=style.css.map */
